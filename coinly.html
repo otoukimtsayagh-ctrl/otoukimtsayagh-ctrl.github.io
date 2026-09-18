@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coinly — Privacy, Terms &amp; About</title>
+<style>
+  :root{--bg:#0b1220;--card:#131f33;--line:#24344d;--text:#e8eef6;--muted:#9fb0c6;--accent:#14b8a6}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.75}
+  .wrap{max-width:860px;margin:0 auto;padding:26px 16px 60px}
+  header{text-align:center;padding:24px 0 6px}
+  .logo{width:74px;height:74px;margin:0 auto 12px;border-radius:20px;
+        background:linear-gradient(135deg,#0d9488,#0b5fa5);display:flex;
+        align-items:center;justify-content:center;font-size:34px}
+  h1{margin:0 0 6px;font-size:30px}
+  .sub{color:var(--muted);font-size:15px}
+  .tabs{display:flex;gap:8px;justify-content:center;margin:22px 0 14px;flex-wrap:wrap}
+  .tabs button{background:var(--card);color:var(--text);border:1px solid var(--line);
+       border-radius:24px;padding:10px 22px;font-size:15px;cursor:pointer}
+  .tabs button.on{background:var(--accent);color:#06251f;border-color:var(--accent);font-weight:700}
+  .nav{display:flex;gap:8px;justify-content:center;margin-bottom:22px;flex-wrap:wrap}
+  .nav button{color:var(--muted);background:none;font-size:14px;border:1px solid var(--line);
+       border-radius:18px;padding:7px 16px;cursor:pointer;font-family:inherit}
+  .nav button:hover{color:var(--accent);border-color:var(--accent)}
+  section.lang{display:none}
+  section.lang.on{display:block}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;
+        padding:22px;margin-bottom:18px}
+  .card h2{font-size:22px;margin:0 0 14px;color:var(--accent)}
+  h3{font-size:17px;margin:20px 0 6px}
+  h3:first-of-type{margin-top:0}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px;padding-inline-start:22px}
+  li{margin-bottom:6px}
+  .updated{color:var(--muted);font-size:14px;margin-bottom:16px}
+  a{color:var(--accent)}
+  footer{text-align:center;color:var(--muted);font-size:14px;margin-top:20px}
+  [dir=ltr]{text-align:left}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">&#128202;</div>
+    <h1>Coinly</h1>
+    <div class="sub">Budget &amp; Expenses &middot; &#1605;&#1583;&#1610;&#1585; &#1575;&#1604;&#1605;&#1589;&#1575;&#1585;&#1610;&#1601; &middot; Suivi des d&eacute;penses</div>
+  </header>
+
+  <div class="tabs">
+    <button class="on" onclick="show('ar',this)">العربية</button>
+    <button onclick="show('en',this)">English</button>
+    <button onclick="show('fr',this)">Français</button>
+  </div>
+
+  <section class="lang on" id="ar" dir="rtl">
+    <div class="nav"><button onclick="go(\'ar-about\')">عن التطبيق</button><button onclick="go(\'ar-privacy\')">سياسة الخصوصية</button><button onclick="go(\'ar-terms\')">شروط الاستخدام</button><button onclick="go(\'ar-contact\')">التواصل</button></div>
+    <p class="updated">آخر تحديث: 18 سبتمبر 2026</p>
+
+    <div class="card" id="ar-about">
+      <h2>عن التطبيق</h2>
+      <p>Coinly تطبيق أندرويد لإدارة المال الشخصي والعائلي، طوّره راشد صياغ. صُمّم ليكون
+         بسيطاً في الاستعمال ودقيقاً في الحساب، ويعمل بالعربية والإنجليزية والفرنسية.</p>
+
+      <h3>ما يقدّمه</h3>
+      <ul>
+        <li>تسجيل المداخيل والمصاريف بفئات وحسابات متعددة، وتقسيم العملية الواحدة.</li>
+        <li>أقسام مستقلة لكل شخص تعيله، فتعرف كم أنفقت على الوالدين والأبناء والأسرة.</li>
+        <li>تفاصيل الشراء: المنتج والكمية وثمن الوحدة، مع تقرير يبيّن ما تنفقه على كل منتج.</li>
+        <li>ميزانيات بحدود وتنبيهات قبل التجاوز.</li>
+        <li>ديون في الاتجاهين مع تتبّع الدفعات، وأهداف ادّخار بمساهماتها.</li>
+        <li>الدفع المؤجل: تسجّل الشراء الآن ويُخصم من رصيدك يوم السداد.</li>
+        <li>تقارير بيانية وتصدير PDF و CSV.</li>
+        <li>استيراد من Excel أو CSV مع معالج يشرح كل خطوة قبل التنفيذ.</li>
+        <li>قفل بالبصمة أو برمز، وإخفاء المبالغ، ونسخ احتياطي محلي.</li>
+      </ul>
+      <p>يعمل التطبيق دون إنترنت. Coinly أداة تتبّع مالي ولا يقدّم نصائح استثمارية أو ائتمانية.</p>
+    </div>
+
+    <div class="card" id="ar-privacy">
+      <h2>سياسة الخصوصية</h2>
+
+      <h3>1. بياناتك تبقى على جهازك</h3>
+      <p>كل ما تسجّله — المداخيل والمصاريف والفئات والأقسام والحسابات والميزانيات والديون
+         والأهداف وتفاصيل الشراء — يُخزَّن محلياً في قاعدة بيانات داخل جهازك وحده. لا يُرسل
+         شيء منها إلى خوادمنا، ولا نملك نسخة منها، ولا نستطيع الاطلاع عليها.</p>
+
+      <h3>2. لا حساب ولا تسجيل دخول</h3>
+      <p>لا يطلب التطبيق بريداً إلكترونياً ولا رقم هاتف ولا إنشاء حساب.</p>
+
+      <h3>3. ما لا نجمعه</h3>
+      <p>لا نجمع اسمك، ولا موقعك الجغرافي، ولا جهات اتصالك، ولا صورك، ولا سلوكك داخل التطبيق.
+         لا توجد أدوات تحليل ولا تتبّع أعطال ترسل بيانات إلى خوادمنا.</p>
+
+      <h3>4. الإعلانات</h3>
+      <p>يعرض التطبيق إعلانات من شبكة Google AdMob لتمويل تطويره وإبقائه مجانياً: شريط أسفل
+         الشاشة، وفواصل بين الحين والآخر، وإعلانات مكافأة اختيارية تُستعمل لبعض الوظائف الثانوية.</p>
+      <p>تستقبل Google ومزوّدوها معرّف الإعلانات الخاص بجهازك وعنوان IP ومعلومات تقنية عن
+         الجهاز، لاختيار الإعلان وقياس أدائه ومنع الاحتيال. تقع هذه العملية داخل مكتبة Google
+         ولا نطّلع نحن على أي منها.</p>
+      <p><strong>ولا تُرسَل أي بيانات مالية إلى شبكة الإعلانات إطلاقاً:</strong> لا مبالغك ولا
+         فئاتك ولا أقسامك ولا ديونك ولا أهدافك ولا أي نص أدخلته.</p>
+      <p>يمكنك في إعدادات أندرويد حذف معرّف الإعلانات أو إيقاف الإعلانات المخصّصة، فتصبح
+         الإعلانات عامة غير مبنية على اهتماماتك. استعمال الإعلانات يخضع أيضاً لسياسة خصوصية
+         Google المتاحة على موقعها.</p>
+
+      <h3>5. الأذونات ولماذا نطلبها</h3>
+      <ul>
+        <li><strong>الإنترنت</strong> — لعرض الإعلانات وفحص التحديثات. تسجيل العمليات لا يحتاجه.</li>
+        <li><strong>الإشعارات</strong> — لتذكيرات التسجيل وتنبيهات الميزانية.</li>
+        <li><strong>المنبّه الدقيق</strong> — ليصل التذكير في وقته. اختياري.</li>
+        <li><strong>البصمة</strong> — لقفل التطبيق إن فعّلته. يديرها نظام أندرويد ولا يصل إليها التطبيق.</li>
+        <li><strong>التخزين</strong> — لحفظ النسخ الاحتياطي والتقارير، ولقراءة ملف الاستيراد الذي تختاره.</li>
+      </ul>
+
+      <h3>6. النسخ الاحتياطي والتصدير والاستيراد</h3>
+      <p>الملفات التي تُنشئها تُحفظ في جهازك وتتصرف فيها كما تشاء. إن شاركتها عبر تطبيق آخر
+         فذلك التطبيق يخضع لسياسته. وملف الاستيراد يُقرأ داخل جهازك فقط ولا يُرفع إلى أي مكان.</p>
+
+      <h3>7. العمل دون إنترنت</h3>
+      <p>يعمل التطبيق كاملاً دون اتصال: التسجيل والتعديل والحذف والميزانيات والديون والأهداف
+         والتقارير والنسخ الاحتياطي كلها محلية. الإعلانات وفحص التحديثات وإعلانات المكافأة
+         وحدها تحتاج اتصالاً، وانقطاعه لا يمنعك من تسجيل أي مدخول أو مصروف.</p>
+
+      <h3>8. عدم البيع أو المشاركة</h3>
+      <p>لا نبيع بياناتك المالية ولا نشاركها مع أي جهة، لأننا أصلاً لا نملك نسخة منها.</p>
+
+      <h3>9. الأطفال</h3>
+      <p>التطبيق موجّه للبالغين ولا يجمع بيانات عن قصد ممن هم دون 13 سنة.</p>
+
+      <h3>10. حقوقك</h3>
+      <p>البيانات على جهازك فأنت تملكها كاملة. يمكنك حذف أي عملية، أو محو كل البيانات من
+         الإعدادات، أو حذف التطبيق — وفي كل حالة تختفي نهائياً ولا تبقى نسخة عندنا.</p>
+
+      <h3>11. تغييرات على هذه السياسة</h3>
+      <p>عند تعديلها يتغير تاريخ آخر تحديث أعلى الصفحة، ويبقى هذا الرابط نفسه.</p>
+    </div>
+
+    <div class="card" id="ar-terms">
+      <h2>شروط الاستخدام</h2>
+
+      <h3>1. قبول الشروط</h3>
+      <p>باستعمالك Coinly فأنت توافق على هذه الشروط. إن لم توافق عليها، فلا تستعمل التطبيق.</p>
+
+      <h3>2. طبيعة التطبيق</h3>
+      <p>Coinly أداة لتتبّع المال وتنظيمه. ليس مؤسسة مالية ولا وسيطاً ولا مستشاراً، ولا يقدّم
+         نصائح استثمارية أو ضريبية أو ائتمانية، ولا ينفّذ أي معاملة مالية حقيقية.</p>
+
+      <h3>3. دقة البيانات</h3>
+      <p>الأرقام التي يعرضها التطبيق مبنية على ما تُدخله أنت. صحة القرارات المالية المبنية
+         عليها مسؤوليتك وحدك، ويُنصح بمراجعة كشوف حساباتك الرسمية.</p>
+
+      <h3>4. مسؤوليتك عن بياناتك</h3>
+      <p>البيانات محفوظة في جهازك وحده. حذف التطبيق أو فقدان الجهاز أو تعطّله يعني فقدانها.
+         أنشئ نسخاً احتياطية بانتظام واحتفظ بها في مكان آمن.</p>
+
+      <h3>5. الإعلانات</h3>
+      <p>التطبيق مجاني ويموَّل بالإعلانات. النقر على إعلان أو تجاهله لا يغيّر أي وظيفة، ولا
+         تُحجب أي ميزة أساسية خلف إعلان.</p>
+
+      <h3>6. إعلانات المكافأة</h3>
+      <p>ترتبط بعض الوظائف الثانوية مثل تصدير التقارير بمشاهدة إعلان مكافأة قصير. هذه
+         الوظائف لا تؤثر على تسجيل المداخيل والمصاريف ولا على أي حساب داخل التطبيق.</p>
+
+      <h3>7. محتوى الإعلانات</h3>
+      <p>يختار المُعلنون محتوى إعلاناتهم عبر شبكة Google، ولا يتحمّل المطوّر مسؤولية ما تعرضه
+         أو ما تروّج له. أبلغنا عن أي إعلان غير لائق وسنحجب فئته.</p>
+
+      <h3>8. الاتصال بالإنترنت</h3>
+      <p>الوظائف الأساسية تعمل دون اتصال. الإعلانات وفحص التحديثات وإعلانات المكافأة وحدها
+         تحتاج اتصالاً، ويتحمّل المستخدم تكلفة البيانات.</p>
+
+      <h3>9. الاستعمال المسموح</h3>
+      <p>يُمنع تعديل التطبيق أو فكّه أو إعادة توزيعه أو استعماله في نشاط غير قانوني.</p>
+
+      <h3>10. الملكية الفكرية</h3>
+      <p>اسم التطبيق وشعاره وتصميمه وشيفرته ملك للمطوّر. بياناتك أنت ملكك وحدك.</p>
+
+      <h3>11. حدود المسؤولية</h3>
+      <p>يُقدَّم التطبيق كما هو، بلا ضمان من أي نوع. لا يتحمّل المطوّر مسؤولية أي خسارة مالية
+         أو فقدان بيانات ناتج عن استعماله أو عن خطأ في الإدخال أو عن عطل في الجهاز.</p>
+
+      <h3>12. التحديثات وإنهاء الخدمة</h3>
+      <p>قد تُضاف ميزات أو تُعدَّل أو تُزال في إصدارات لاحقة. ويحق للمطوّر إيقاف تطوير التطبيق
+         أو سحبه من المتجر في أي وقت، وتبقى بياناتك في جهازك في كل الأحوال.</p>
+
+      <h3>13. القانون المطبَّق</h3>
+      <p>تخضع هذه الشروط لقوانين المملكة المغربية.</p>
+    </div>
+
+    <div class="card" id="ar-contact">
+      <h2>التواصل</h2>
+      <p>لأي سؤال أو ملاحظة أو بلاغ عن خلل:</p>
+      <ul>
+        <li>البريد الإلكتروني: <a href="mailto:otoukimt07@gmail.com">otoukimt07@gmail.com</a></li>
+        <li>الهاتف: <a href="tel:+212610457204">+212 610 457 204</a></li>
+        <li>المطوّر: راشد صياغ — المغرب</li>
+      </ul>
+      <p>نجيب عادةً خلال أيام قليلة. عند الإبلاغ عن خلل، اذكر إصدار التطبيق ونوع جهازك ووصفاً
+         لما حدث.</p>
+    </div>
+  </section>
+
+  <section class="lang" id="en" dir="ltr">
+    <div class="nav"><button onclick="go(\'en-about\')">About</button><button onclick="go(\'en-privacy\')">Privacy</button><button onclick="go(\'en-terms\')">Terms</button><button onclick="go(\'en-contact\')">Contact</button></div>
+    <p class="updated">Last updated: 18 September 2026</p>
+
+    <div class="card" id="en-about">
+      <h2>About Coinly</h2>
+      <p>Coinly is an Android app for personal and family money management, developed by
+         Rachid Sayagh. It is built to be simple to use and precise in its arithmetic, and it
+         works in Arabic, English and French.</p>
+
+      <h3>What it offers</h3>
+      <ul>
+        <li>Income and expenses with multiple categories and accounts, and split entries.</li>
+        <li>A separate section for every person you support, so you know what goes to parents, children and family.</li>
+        <li>Purchase details — product, quantity, unit price — with a report showing what each product costs you.</li>
+        <li>Budgets with limits and alerts before you overspend.</li>
+        <li>Debts in both directions with payment tracking, and savings goals with contributions.</li>
+        <li>Deferred payment: record the purchase now, deduct it from your balance on the due date.</li>
+        <li>Visual reports and PDF / CSV export.</li>
+        <li>Import from Excel or CSV with a wizard that explains every step before it runs.</li>
+        <li>Fingerprint or PIN lock, hidden amounts, and local backups.</li>
+      </ul>
+      <p>The app works offline. Coinly is a money tracker; it gives no investment or credit advice.</p>
+    </div>
+
+    <div class="card" id="en-privacy">
+      <h2>Privacy Policy</h2>
+
+      <h3>1. Your data stays on your device</h3>
+      <p>Everything you record — income, expenses, categories, sections, accounts, budgets,
+         debts, goals and purchase details — is stored locally in a database on your device
+         only. None of it is sent to our servers, we hold no copy of it, and we cannot access it.</p>
+
+      <h3>2. No account, no sign-in</h3>
+      <p>The app asks for no email, no phone number and no account.</p>
+
+      <h3>3. What we do not collect</h3>
+      <p>We do not collect your name, location, contacts, photos or your behaviour inside the
+         app. No analytics or crash-reporting tools send data to our servers.</p>
+
+      <h3>4. Advertising</h3>
+      <p>The app shows ads from the Google AdMob network to fund its development and keep it
+         free: a banner at the bottom of the screen, occasional full-screen breaks, and optional rewarded ads used for some secondary features.</p>
+      <p>Google and its vendors receive your device advertising identifier, IP address and
+         technical device information in order to select ads, measure performance and prevent
+         fraud. This happens inside Google's library and we see none of it.</p>
+      <p><strong>No financial data is ever sent to the ad network:</strong> not your amounts,
+         categories, sections, debts, goals, or any text you entered.</p>
+      <p>In your Android settings you can delete the advertising identifier or turn off
+         personalised ads, after which ads become generic rather than interest based. Use of
+         advertising is also governed by Google's own privacy policy.</p>
+
+      <h3>5. Permissions and why we ask</h3>
+      <ul>
+        <li><strong>Internet</strong> — for ads and update checks. Recording entries does not need it.</li>
+        <li><strong>Notifications</strong> — for entry reminders and budget alerts.</li>
+        <li><strong>Exact alarms</strong> — so reminders arrive on time. Optional.</li>
+        <li><strong>Biometrics</strong> — to lock the app if you enable it. Handled by Android; never reaches the app.</li>
+        <li><strong>Storage</strong> — to save backups and reports, and to read the import file you choose.</li>
+      </ul>
+
+      <h3>6. Backup, export and import</h3>
+      <p>Files you create are saved on your device and are yours to handle. If you share one
+         through another app, that app follows its own policy. An imported file is read on your
+         device only and uploaded nowhere.</p>
+
+      <h3>7. Works offline</h3>
+      <p>The app works fully without a connection: recording, editing, deleting, budgets, debts,
+         goals, reports and backups are all local. Only ads, update checks and rewarded ads need
+         a connection, and losing it never stops you recording income or expenses.</p>
+
+      <h3>8. No selling or sharing</h3>
+      <p>We do not sell your financial data or share it with anyone, because we hold no copy of it.</p>
+
+      <h3>9. Children</h3>
+      <p>The app is intended for adults and does not knowingly collect data from anyone under 13.</p>
+
+      <h3>10. Your rights</h3>
+      <p>Because the data lives on your device, it is entirely yours. You may delete any entry,
+         erase all data from Settings, or uninstall the app — in every case the data is gone for
+         good and no copy remains with us.</p>
+
+      <h3>11. Changes to this policy</h3>
+      <p>If it changes, the date at the top of this page changes and this link stays the same.</p>
+    </div>
+
+    <div class="card" id="en-terms">
+      <h2>Terms of Use</h2>
+
+      <h3>1. Acceptance</h3>
+      <p>By using Coinly you agree to these terms. If you do not agree, do not use the app.</p>
+
+      <h3>2. What the app is</h3>
+      <p>Coinly is a tool for tracking and organising money. It is not a financial institution,
+         broker or adviser, it gives no investment, tax or credit advice, and it carries out no
+         real financial transaction.</p>
+
+      <h3>3. Accuracy</h3>
+      <p>The figures shown are based on what you enter. Decisions you take on them are your own
+         responsibility, and you should check your official account statements.</p>
+
+      <h3>4. Responsibility for your data</h3>
+      <p>Your data lives on your device alone. Uninstalling the app, losing the device or a
+         hardware failure means losing it. Create backups regularly and keep them safe.</p>
+
+      <h3>5. Advertising</h3>
+      <p>The app is free and funded by ads. Clicking or ignoring an ad changes no functionality,
+         and no core feature is locked behind an ad.</p>
+
+      <h3>6. Rewarded ads</h3>
+      <p>Some secondary features such as report export require watching a short rewarded ad.
+         These features affect neither the recording of income and expenses nor any calculation.</p>
+
+      <h3>7. Ad content</h3>
+      <p>Advertisers choose their own content through the Google network, and the developer is
+         not responsible for what is shown or promoted. Report any inappropriate ad and we will
+         block its category.</p>
+
+      <h3>8. Internet connection</h3>
+      <p>Core features work offline. Only ads, update checks and rewarded ads need a connection,
+         and data charges are the user's responsibility.</p>
+
+      <h3>9. Permitted use</h3>
+      <p>You may not modify, reverse engineer, redistribute the app or use it for any unlawful purpose.</p>
+
+      <h3>10. Intellectual property</h3>
+      <p>The app name, logo, design and code belong to the developer. Your data belongs to you alone.</p>
+
+      <h3>11. Limitation of liability</h3>
+      <p>The app is provided as is, without warranty of any kind. The developer is not liable for
+         any financial loss or data loss resulting from its use, from an input error or from a
+         device failure.</p>
+
+      <h3>12. Updates and discontinuation</h3>
+      <p>Features may be added, changed or removed in later versions. The developer may stop
+         developing the app or withdraw it from the store at any time; your data stays on your
+         device in every case.</p>
+
+      <h3>13. Governing law</h3>
+      <p>These terms are governed by the laws of the Kingdom of Morocco.</p>
+    </div>
+
+    <div class="card" id="en-contact">
+      <h2>Contact</h2>
+      <p>For any question, feedback or bug report:</p>
+      <ul>
+        <li>Email: <a href="mailto:otoukimt07@gmail.com">otoukimt07@gmail.com</a></li>
+        <li>Phone: <a href="tel:+212610457204">+212 610 457 204</a></li>
+        <li>Developer: Rachid Sayagh — Morocco</li>
+      </ul>
+      <p>We usually reply within a few days. When reporting a bug, please mention the app
+         version, your device model and what happened.</p>
+    </div>
+  </section>
+
+  <section class="lang" id="fr" dir="ltr">
+    <div class="nav"><button onclick="go(\'fr-about\')">À propos</button><button onclick="go(\'fr-privacy\')">Confidentialité</button><button onclick="go(\'fr-terms\')">Conditions</button><button onclick="go(\'fr-contact\')">Contact</button></div>
+    <p class="updated">Dernière mise à jour : 18 septembre 2026</p>
+
+    <div class="card" id="fr-about">
+      <h2>À propos de Coinly</h2>
+      <p>Coinly est une application Android de gestion des finances personnelles et familiales,
+         développée par Rachid Sayagh. Elle se veut simple à utiliser et rigoureuse dans ses
+         calculs, et fonctionne en arabe, anglais et français.</p>
+
+      <h3>Ce qu'elle propose</h3>
+      <ul>
+        <li>Revenus et dépenses avec plusieurs catégories et comptes, et division d'une opération.</li>
+        <li>Une section distincte pour chaque personne à charge : parents, enfants, famille.</li>
+        <li>Détail des achats — produit, quantité, prix unitaire — avec un rapport par produit.</li>
+        <li>Budgets avec plafonds et alertes avant dépassement.</li>
+        <li>Dettes dans les deux sens avec suivi des paiements, et objectifs d'épargne.</li>
+        <li>Paiement différé : l'achat est enregistré maintenant et déduit du solde à l'échéance.</li>
+        <li>Rapports visuels et export PDF / CSV.</li>
+        <li>Import depuis Excel ou CSV, avec un assistant qui explique chaque étape.</li>
+        <li>Verrouillage par empreinte ou code, masquage des montants, sauvegardes locales.</li>
+      </ul>
+      <p>L'application fonctionne hors ligne. Coinly est un outil de suivi ; elle ne donne aucun
+         conseil en investissement ni en crédit.</p>
+    </div>
+
+    <div class="card" id="fr-privacy">
+      <h2>Politique de confidentialité</h2>
+
+      <h3>1. Vos données restent sur votre appareil</h3>
+      <p>Tout ce que vous enregistrez — revenus, dépenses, catégories, sections, comptes,
+         budgets, dettes, objectifs et détails d'achat — est stocké localement sur votre seul
+         appareil. Rien n'est envoyé à nos serveurs, nous n'en détenons aucune copie et nous ne
+         pouvons pas y accéder.</p>
+
+      <h3>2. Aucun compte, aucune connexion</h3>
+      <p>L'application ne demande ni e-mail, ni numéro de téléphone, ni création de compte.</p>
+
+      <h3>3. Ce que nous ne collectons pas</h3>
+      <p>Nous ne collectons ni votre nom, ni votre localisation, ni vos contacts, ni vos photos,
+         ni votre comportement dans l'application. Aucun outil d'analyse ou de rapport de
+         plantage n'envoie de données à nos serveurs.</p>
+
+      <h3>4. Publicité</h3>
+      <p>L'application affiche des publicités du réseau Google AdMob afin de financer son
+         développement et rester gratuite : une bannière en bas de l'écran, des interstitiels
+         occasionnels et des publicités avec récompense pour certaines fonctions secondaires.</p>
+      <p>Google et ses fournisseurs reçoivent l'identifiant publicitaire de votre appareil,
+         votre adresse IP et des informations techniques, afin de sélectionner les annonces,
+         mesurer leurs performances et prévenir la fraude. Cela se passe dans la bibliothèque de
+         Google et nous n'y avons aucun accès.</p>
+      <p><strong>Aucune donnée financière n'est transmise au réseau publicitaire :</strong> ni
+         vos montants, ni vos catégories, ni vos sections, ni vos dettes, ni vos objectifs, ni
+         aucun texte saisi.</p>
+      <p>Dans les réglages Android, vous pouvez supprimer l'identifiant publicitaire ou
+         désactiver les annonces personnalisées. L'usage de la publicité est également régi par
+         la politique de confidentialité de Google.</p>
+
+      <h3>5. Autorisations et raisons</h3>
+      <ul>
+        <li><strong>Internet</strong> — pour les publicités et la vérification des mises à jour.</li>
+        <li><strong>Notifications</strong> — pour les rappels de saisie et les alertes de budget.</li>
+        <li><strong>Alarmes exactes</strong> — pour que les rappels arrivent à l'heure. Facultatif.</li>
+        <li><strong>Biométrie</strong> — pour verrouiller l'application si vous l'activez. Gérée par Android.</li>
+        <li><strong>Stockage</strong> — pour enregistrer sauvegardes et rapports, et lire le fichier importé.</li>
+      </ul>
+
+      <h3>6. Sauvegarde, export et import</h3>
+      <p>Les fichiers que vous créez sont enregistrés sur votre appareil. Si vous les partagez
+         via une autre application, celle-ci suit sa propre politique. Un fichier importé est lu
+         uniquement sur votre appareil.</p>
+
+      <h3>7. Fonctionne hors ligne</h3>
+      <p>L'application fonctionne entièrement sans connexion : saisie, modification,
+         suppression, budgets, dettes, objectifs, rapports et sauvegardes sont locaux. Seules
+         les publicités, la vérification des mises à jour et les publicités avec récompense
+         nécessitent une connexion.</p>
+
+      <h3>8. Ni vente ni partage</h3>
+      <p>Nous ne vendons ni ne partageons vos données financières, car nous n'en détenons aucune copie.</p>
+
+      <h3>9. Enfants</h3>
+      <p>L'application s'adresse aux adultes et ne collecte pas sciemment de données de personnes
+         de moins de 13 ans.</p>
+
+      <h3>10. Vos droits</h3>
+      <p>Les données vivant sur votre appareil, elles vous appartiennent entièrement. Vous pouvez
+         supprimer une opération, effacer toutes les données depuis les réglages, ou désinstaller
+         l'application.</p>
+
+      <h3>11. Modifications</h3>
+      <p>En cas de modification, la date en haut de cette page change et ce lien reste identique.</p>
+    </div>
+
+    <div class="card" id="fr-terms">
+      <h2>Conditions d'utilisation</h2>
+
+      <h3>1. Acceptation</h3>
+      <p>En utilisant Coinly, vous acceptez ces conditions. Si vous ne les acceptez pas,
+         n'utilisez pas l'application.</p>
+
+      <h3>2. Nature de l'application</h3>
+      <p>Coinly est un outil de suivi et d'organisation. Ce n'est ni un établissement financier,
+         ni un courtier, ni un conseiller ; elle ne donne aucun conseil en investissement,
+         fiscal ou en crédit, et n'effectue aucune transaction réelle.</p>
+
+      <h3>3. Exactitude</h3>
+      <p>Les chiffres affichés reposent sur ce que vous saisissez. Les décisions prises sur cette
+         base relèvent de votre seule responsabilité ; vérifiez vos relevés officiels.</p>
+
+      <h3>4. Responsabilité de vos données</h3>
+      <p>Vos données vivent sur votre seul appareil. Désinstaller l'application, perdre l'appareil
+         ou une panne matérielle entraîne leur perte. Faites des sauvegardes régulières.</p>
+
+      <h3>5. Publicité</h3>
+      <p>L'application est gratuite et financée par la publicité. Cliquer sur une annonce ou
+         l'ignorer ne change aucune fonction, et aucune fonctionnalité essentielle n'est bloquée
+         derrière une publicité.</p>
+
+      <h3>6. Publicités avec récompense</h3>
+      <p>Certaines fonctions secondaires, comme l'export des rapports, nécessitent une courte publicité avec récompense. Elles n'affectent ni la saisie ni les calculs.</p>
+
+      <h3>7. Contenu publicitaire</h3>
+      <p>Les annonceurs choisissent leur contenu via le réseau Google ; le développeur n'est pas
+         responsable de ce qui est affiché. Signalez toute annonce inappropriée.</p>
+
+      <h3>8. Connexion Internet</h3>
+      <p>Les fonctions essentielles marchent hors ligne. Seules les publicités, la vérification
+         des mises à jour et les publicités avec récompense nécessitent une connexion, aux frais
+         de données de l'utilisateur.</p>
+
+      <h3>9. Usage autorisé</h3>
+      <p>Il est interdit de modifier, décompiler ou redistribuer l'application, ou de l'utiliser
+         à des fins illégales.</p>
+
+      <h3>10. Propriété intellectuelle</h3>
+      <p>Le nom, le logo, le design et le code appartiennent au développeur. Vos données vous
+         appartiennent exclusivement.</p>
+
+      <h3>11. Limitation de responsabilité</h3>
+      <p>L'application est fournie en l'état, sans garantie d'aucune sorte. Le développeur n'est
+         pas responsable des pertes financières ou de données résultant de son usage, d'une
+         erreur de saisie ou d'une panne d'appareil.</p>
+
+      <h3>12. Mises à jour et arrêt</h3>
+      <p>Des fonctions peuvent être ajoutées, modifiées ou retirées. Le développeur peut cesser
+         le développement ou retirer l'application du store à tout moment ; vos données restent
+         sur votre appareil.</p>
+
+      <h3>13. Droit applicable</h3>
+      <p>Ces conditions sont régies par le droit du Royaume du Maroc.</p>
+    </div>
+
+    <div class="card" id="fr-contact">
+      <h2>Contact</h2>
+      <p>Pour toute question, remarque ou signalement :</p>
+      <ul>
+        <li>E-mail : <a href="mailto:otoukimt07@gmail.com">otoukimt07@gmail.com</a></li>
+        <li>Téléphone : <a href="tel:+212610457204">+212 610 457 204</a></li>
+        <li>Développeur : Rachid Sayagh — Maroc</li>
+      </ul>
+      <p>Nous répondons généralement sous quelques jours. Pour un bug, précisez la version de
+         l'application, le modèle de votre appareil et ce qui s'est passé.</p>
+    </div>
+  </section>
+
+  <footer>&copy; 2026 Rachid Sayagh &middot; Coinly</footer>
+</div>
+
+<script>
+function go(id){
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+}
+function show(id, btn){
+  document.querySelectorAll('section.lang').forEach(function(s){s.classList.remove('on')});
+  document.querySelectorAll('.tabs button').forEach(function(b){b.classList.remove('on')});
+  document.getElementById(id).classList.add('on');
+  btn.classList.add('on');
+  document.documentElement.setAttribute('lang', id);
+  document.documentElement.setAttribute('dir', id === 'ar' ? 'rtl' : 'ltr');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
